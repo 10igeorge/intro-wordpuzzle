@@ -7,3 +7,9 @@ describe('isString', function(){
       expect(isString(5)).to.equal(false);
     });
 });
+
+describe('isVowel', function(){
+  it("will replace vowels with '-'", function(){
+    expect(isVowel("hi my name is sue")).to.equal("h- my n-m- -s s--");
+  });
+});

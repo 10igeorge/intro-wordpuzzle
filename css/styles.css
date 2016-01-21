@@ -1,0 +1,9 @@
+body {
+  background-color: lightyellow;
+
+}
+
+#result {
+  border-radius: 6px;
+  background-color: lightgrey;
+}

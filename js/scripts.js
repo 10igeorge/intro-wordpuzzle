@@ -6,7 +6,18 @@ var isString = function(phrase) {
   }
 }
 
-var printString = function(greeting) {
-
-  return greeting;
+var isVowel = function(phrase) {
+  var phrase = phrase.replace(/[aeiou]/g,'-');
+  return phrase;
 }
+
+$(document).ready(function(){
+  $("form#vowels").submit(function(event){
+    var userSentence = $("#sentence").val();
+    var translated = isVowel(userSentence);
+    var notString = isString(userSentence);
+    $("#result").text(translated);
+    event.preventDefault();
+  });
+
+});

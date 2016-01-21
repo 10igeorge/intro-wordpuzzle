@@ -1,10 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+    <script src="js/jquery-1.12.0.min.js" charset="utf-8"></script>
+    <script src="js/scripts.js" charset="utf-8"></script>
     <meta charset="utf-8">
-    <title></title>
+    <title>Replace Vowels with dashes</title>
   </head>
   <body>
+    <div class="container">
+      <h1>Replace Vowells with Dashes</h1>
+        <form id="vowels">
+          <div class="form-group">
+            <label for="string">Please enter a sentence to have the vowels replaced with dashes.</label>
+            <input type="string" class="form-control" id="sentence">
+          </div>
 
+          <button type="submit" class="btn btn-default">submit please</button>
+
+        </form>
+        <br>
+        <div id="result">
+          <p>
+            <span class="noVowels"></span>
+          </p>
+        </div>
+    </div>
   </body>
 </html>
